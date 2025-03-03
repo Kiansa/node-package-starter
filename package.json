@@ -25,7 +25,7 @@
     "dev": "rolldown -w -c rolldown.config.ts",
     "build": "rolldown -c rolldown.config.ts",
     "test": "vitest",
-    "release": "changelogen"
+    "release": "changelogen --bump"
   },
   "devDependencies": {
     "changelogen": "^0.6.1",
