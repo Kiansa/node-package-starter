@@ -1,0 +1,36 @@
+{
+  "name": "my-package-name",
+  "version": "0.0.1",
+  "description": "my package description",
+  "keywords": [
+    "npm starter",
+    "node package",
+    "boilerplate",
+    "typescript",
+    "release",
+    "rolldown"
+  ],
+  "homepage": "https://github.com/Kiansa/node-package-starter#readme",
+  "bugs": {
+    "url": "https://github.com/Kiansa/node-package-starter/issues"
+  },
+  "repository": "Kiansa/node-package-starter",
+  "license": "MIT",
+  "author": "Kiansa",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "rolldown -w -c rolldown.config.ts",
+    "build": "rolldown -c rolldown.config.ts",
+    "test": "vitest",
+    "release": "changelogen"
+  },
+  "devDependencies": {
+    "changelogen": "^0.6.1",
+    "rolldown": "^1.0.0-beta.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  }
+}
