@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "moduleDetection": "auto",
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "declaration": true,
+    "module": "NodeNext",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*"], // Specify files to include in compilation
+  "exclude": ["node_modules"]
+}
