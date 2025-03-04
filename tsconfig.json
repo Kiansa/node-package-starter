@@ -1,19 +1,22 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "target": "ESNext",
     "moduleDetection": "auto",
     "verbatimModuleSyntax": true,
     "strict": true,
     "declaration": true,
-    "module": "NodeNext",
-    "rootDir": "./src",
+    "declarationDir": "./dist/types",
+    "rootDir": "./",
     "outDir": "./dist",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["vitest/globals"]
   },
-  "include": ["src/**/*"], // Specify files to include in compilation
+  "include": ["src", "tests"],
   "exclude": ["node_modules"]
 }
