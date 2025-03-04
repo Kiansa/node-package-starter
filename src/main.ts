@@ -1,3 +1,13 @@
-import { hello } from './utils/hello.js'
+import { greet } from './utils/hello'
+import type { Person } from './types/person'
 
-hello()
+function main() {
+  const user: Person = {
+    name: 'Alice',
+    age: 30,
+  }
+
+  greet(user.name)
+}
+
+main()
