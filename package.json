@@ -1,6 +1,6 @@
 {
   "name": "my-package-name",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "my package description",
   "keywords": [
     "npm starter",
@@ -25,7 +25,7 @@
     "dev": "rolldown -w -c rolldown.config.ts",
     "build": "rolldown -c rolldown.config.ts",
     "test": "vitest",
-    "release": "changelogen --bump"
+    "release": "changelogen --release"
   },
   "devDependencies": {
     "changelogen": "^0.6.1",
